@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東大生のための厳選インターンMeetup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background-image: linear-gradient(to right, #ff952d, #ffa84d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .feature-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(255,149,45,0.15);
+            border-left-color: #ff952d;
+        }
+        .line-button {
+            background: linear-gradient(135deg, #06C755 0%, #00B900 100%);
+            color: white;
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            font-size: 1.125rem;
+            box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
+            transition: all 0.3s ease;
+        }
+        .line-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(6, 199, 85, 0.4);
+        }
+        .line-section {
+            background: linear-gradient(135deg, #fff8f0 0%, #fff4e6 100%);
+            border: 3px solid #ff952d;
+            border-radius: 1rem;
+        }
+        .step-number {
+            background: linear-gradient(135deg, #ff952d 0%, #ff7e1d 100%);
+            color: white;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, #ff952d, #ffa84d);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 text-white text-center py-20 px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">東大生のための<br><span class="text-white drop-shadow-lg">厳選インターンMeetup</span></h1>
+        <p class="text-lg md:text-xl font-medium mt-4 opacity-95">未来のキャリアにつながる「リアルな接点」がここにある</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <span class="badge bg-white text-orange-600 shadow-lg">無料軽食つき</span>
+            <span class="badge bg-red-500 text-white shadow-lg">人数限定開催</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- 公式LINE登録セクション -->
+        <section id="line-registration" class="mb-12 line-section p-8 shadow-lg">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-orange-600 mb-3">
+                    参加前に必ずご確認ください
+                </h2>
+                <p class="text-lg font-semibold text-gray-800">
+                    イベント参加には<span class="text-orange-600 font-bold">公式LINE登録が必須</span>です
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 md:p-8 shadow-md mb-6">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">参加までの流れ</h3>
+                <div class="space-y-5">
+                    <div class="flex items-start gap-4">
+                        <div class="step-number">1</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-gray-800 mb-1">公式LINEに登録</h4>
+                            <p class="text-gray-600">下のボタンから公式LINEアカウントを友だち追加してください</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="step-number">2</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-gray-800 mb-1">トーク画面にお名前を送信</h4>
+                            <p class="text-gray-600">登録後、トーク画面に<span class="font-bold text-orange-600">お名前（フルネーム）</span>を送ってください</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="step-number">3</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-gray-800 mb-1">参加申込フォームを記入</h4>
+                            <p class="text-gray-600">ページ下部の申込フォームから参加登録を完了させてください</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://line.me/R/ti/p/%40178lxfxi" target="_blank" class="line-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                    </svg>
+                    公式LINEに登録する
+                </a>
+                <p class="mt-4 text-sm text-gray-600">
+                    ※ LINE登録とお名前送信が完了していないと、イベントに参加できません
+                </p>
+            </div>
+        </section>
+
+        <section id="highlights" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 section-header">このイベントの特徴</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="feature-card">
+                    <h3 class="text-xl font-bold text-orange-600 mb-3">成長機会を提供する企業が集結</h3>
+                    <p class="text-gray-700 leading-relaxed">直接インターンの話を聞けるから、<span class="text-orange-600 font-semibold">自分に合うインターンを探せる</span></p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="text-xl font-bold text-orange-600 mb-3">その場でインターン採用の可能性も</h3>
+                    <p class="text-gray-700 leading-relaxed">企業担当者と直接交流するから、<span class="text-orange-600 font-semibold">すぐに長期インターンが始められるかも</span></p>
+                </div>
+            </div>
+            <div class="mt-6 feature-card bg-gradient-to-br from-orange-50 to-yellow-50">
+                <h3 class="text-xl font-bold text-orange-600 mb-3">当日は無料軽食つき</h3>
+                <p class="text-gray-700 leading-relaxed">美味しい軽食を楽しみながら、リラックスした雰囲気で企業の方と交流できます</p>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 section-header">イベント概要</h2>
+            <p class="mb-4 text-base leading-relaxed text-gray-700">
+                「どんな長期インターンがあるんだろう？」「企業の人のリアルな話を聞いてみたい」<br>
+                そんな思いを持つ東大生が長期インターンを始めるきっかけとなる交流イベントです。
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+                堅苦しい説明会ではなく、少人数でカジュアルに企業担当者と気軽に話せる場を提供します。
+                あなたの興味や関心に合う、最高のインターン先を見つけてみませんか？
+            </p>
+        </section>
+
+        <section id="target-audience" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 section-header">こんな人におすすめ</h2>
+            <ul class="space-y-3">
+                <li class="flex items-start bg-gray-50 p-4 rounded-lg hover:bg-orange-50 transition-colors">
+                    <svg class="w-6 h-6 text-orange-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-medium text-gray-800">長期・有給インターンに興味がある</span>
+                </li>
+                <li class="flex items-start bg-gray-50 p-4 rounded-lg hover:bg-orange-50 transition-colors">
+                    <svg class="w-6 h-6 text-orange-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-medium text-gray-800">スタートアップやベンチャー企業の雰囲気を知りたい</span>
+                </li>
+                <li class="flex items-start bg-gray-50 p-4 rounded-lg hover:bg-orange-50 transition-colors">
+                    <svg class="w-6 h-6 text-orange-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-medium text-gray-800">自分の専門やスキルがどう活かせるか試したい</span>
+                </li>
+                <li class="flex items-start bg-gray-50 p-4 rounded-lg hover:bg-orange-50 transition-colors">
+                    <svg class="w-6 h-6 text-orange-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-medium text-gray-800">就職活動の前に、社会人との繋がりを作りたい</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="schedule" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 section-header">開催日程</h2>
+            <p class="text-base mb-6 text-gray-700"><strong>会場：</strong>東京大学 駒場キャンパス 学生食堂2階『ダイニング銀杏』</p>
+            <div class="space-y-4">
+                <div class="border-l-4 border-orange-500 bg-gradient-to-r from-orange-50 to-yellow-50 p-5 rounded-r-lg shadow-sm relative hover:shadow-md transition-shadow">
+                    <span class="absolute -top-2 left-0 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">次回開催</span>
+                    <h3 class="text-xl font-bold text-gray-900 mt-2 mb-1">第6回インターンMeetup</h3>
+                    <p class="text-base text-gray-800 font-semibold">2025年10月28日（火） 17:00 - 19:30</p>
+                    <p class="text-sm text-gray-600 mt-2">※4限後にそのまま行ける！5限まである人でも、途中参加OK</p>
+                </div>
+                <div class="border-l-4 border-gray-300 bg-gray-50 p-5 rounded-r-lg hover:border-orange-400 hover:bg-orange-50 transition-all">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">第7回インターンMeetup</h3>
+                    <p class="text-base text-gray-700">2025年11月25日（火） 17:00 - 19:30</p>
+                </div>
+                <div class="border-l-4 border-gray-300 bg-gray-50 p-5 rounded-r-lg hover:border-orange-400 hover:bg-orange-50 transition-all">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">第8回インターンMeetup</h3>
+                    <p class="text-base text-gray-700">2025年12月19日（火） 17:00 - 19:30</p>
+                </div>
+                <div class="border-l-4 border-gray-300 bg-gray-50 p-5 rounded-r-lg hover:border-orange-400 hover:bg-orange-50 transition-all">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">第9回インターンMeetup</h3>
+                    <p class="text-base text-gray-700">2025年1月13日（火） 17:00 - 19:30</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="companies" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 section-header">第6回 登壇予定企業</h2>
+            <p class="mb-8 text-base leading-relaxed text-gray-700">当日は、急成長中の魅力的な企業が5社参加予定です。<br>
+               業界を牽引する企業や、ユニークなベンチャー企業と直接話せるチャンスです。</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
+                <div class="p-4 bg-gradient-to-br from-orange-50 to-yellow-50 border-2 border-orange-200 rounded-lg flex flex-col items-center justify-center h-32 hover:border-orange-400 transition-colors shadow-sm">
+                    <span class="font-bold text-gray-800 text-base">株式会社FRED</span>
+                    <span class="text-xs text-gray-500 mt-1">(ロゴ掲載予定)</span>
+                </div>
+                <div class="p-4 bg-gradient-to-br from-orange-50 to-yellow-50 border-2 border-orange-200 rounded-lg flex flex-col items-center justify-center h-32 hover:border-orange-400 transition-colors shadow-sm">
+                    <span class="font-bold text-gray-800 text-base">株式会社アップグレード</span>
+                    <span class="text-xs text-gray-500 mt-1">(ロゴ掲載予定)</span>
+                </div>
+                <div class="p-4 bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center h-32">
+                    <span class="text-gray-400 font-semibold text-base">Coming Soon</span>
+                    <span class="text-xs text-gray-400 mt-1">（3社）</span>
+                </div>
+                <div class="p-4 bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center h-32">
+                    <span class="text-gray-400 font-semibold text-base">Coming Soon</span>
+                    <span class="text-xs text-gray-400 mt-1">（3社）</span>
+                </div>
+                <div class="p-4 bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center h-32">
+                    <span class="text-gray-400 font-semibold text-base">Coming Soon</span>
+                    <span class="text-xs text-gray-400 mt-1">（3社）</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="referral-campaign" class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg shadow-lg p-8 mb-12 border-2 border-orange-300 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-orange-600 mb-4">友達紹介キャンペーン実施中</h2>
+            <p class="text-xl font-bold text-gray-800 leading-relaxed mb-4">
+                友達と一緒に参加すると<br>
+                <span class="text-orange-600 text-2xl">双方に1000円分のアマギフをプレゼント</span>
+            </p>
+            <p class="text-base text-gray-700">
+                該当される方は、下記の申込フォームに紹介者のお名前をご記入ください。<br>
+                （複数回参加の場合も、初回参加時に限ります）
+            </p>
+        </section>
+
+        <section id="register" class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold text-gray-900 section-header text-center">参加申し込み</h2>
+            <div class="bg-orange-50 border-l-4 border-orange-500 rounded-lg p-5 mb-6">
+                <p class="text-base font-bold text-orange-700 mb-1">⚠️ 必ず先に公式LINEに登録してください</p>
+                <p class="text-sm text-gray-700">公式LINEでお名前を送信してから、下記のフォームでお申し込みください。</p>
+            </div>
+            <div class="text-center">
+                <p class="mb-6 text-base text-gray-700">席には限りがありますので、ご興味のある方はお早めにお申し込みください。<br>皆さんのご参加をお待ちしています。</p>
+                <div class="relative w-full overflow-hidden rounded-lg shadow-lg" style="padding-top: 150%;"> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSce1_7Jwt4Kch1B3K7hW5f8PVz1RaHD7Mu7dJJbLBmOe9Wbhw/viewform?embedded=true" class="absolute inset-0 w-full h-full border-0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 px-4 text-gray-600 bg-white border-t">
+        <p class="font-semibold text-base">&copy; 2025 Intern Meetup for U-maTch.</p>
+        <p class="text-orange-600 text-sm mt-1">ハイクラス学生向け長期インターン求人サイト</p>
+    </footer>
+
+</body>
+</html>
